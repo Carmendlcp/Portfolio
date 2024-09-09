@@ -280,7 +280,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 75%;
+    width: 60%;
   }
 }
 
@@ -293,20 +293,20 @@ html {
     width: 0%;
   }
   100% {
-    width: 89%;
+    width: 75%;
   }
 }
 
-.skills .skill .photoshop {
+.skills .skill .node {
   width: 0%;
-  animation: 2s photoshop forwards;
+  animation: 2s node forwards;
 }
-@keyframes photoshop {
+@keyframes node {
   0% {
     width: 0%;
   }
   100% {
-    width: 95%;
+    width: 55%;
   }
 }
 
@@ -319,20 +319,71 @@ html {
     width: 0%;
   }
   100% {
-    width: 81%;
+    width: 70%;
   }
 }
 
-.skills .skill .drupal {
+.skills .skill .angular {
   width: 0%;
-  animation: 2s drupal forwards;
+  animation: 2s angular forwards;
 }
-@keyframes drupal {
+@keyframes angular {
   0% {
     width: 0%;
   }
   100% {
     width: 55%;
+  }
+}
+
+.skills .skill .react {
+  width: 0%;
+  animation: 2s react forwards;
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+.skills .skill .laravel {
+  width: 0%;
+  animation: 2s laravel forwards;
+}
+@keyframes laravel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+.skills .skill .mongo {
+  width: 0%;
+  animation: 2s mongo forwards;
+}
+@keyframes mongo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.skills .skill .atc {
+  width: 0%;
+  animation: 2s atc forwards;
+}
+@keyframes atc {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
   }
 }
 
@@ -345,7 +396,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -358,7 +409,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 97%;
   }
 }
 
@@ -371,7 +422,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 99%;
+    width: 87%;
   }
 }
 
@@ -384,20 +435,46 @@ html {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 85%;
   }
 }
 
-.skills .skill .proyect {
+.skills .skill .resolutiva {
   width: 0%;
-  animation: 2s proyect forwards;
+  animation: 2s resolutiva forwards;
 }
-@keyframes proyect {
+@keyframes resolutiva {
   0% {
     width: 0%;
   }
   100% {
-    width: 94%;
+    width: 80%;
+  }
+}
+
+.skills .skill .adaptabilidad {
+  width: 0%;
+  animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.skills .skill .cliente {
+  width: 0%;
+  animation: 2s cliente forwards;
+}
+@keyframes cliente {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 93%;
   }
 }
 /* SECCION CURRICULUM */
@@ -467,7 +544,7 @@ html {
   border-left: 2px solid #1cb698;
   margin-left: 20px;
 }
-.curriculum .fila .item .conectori {
+/* .curriculum .fila .item .conectori {
   height: 2px;
   background-color: #1cb698;
   width: 47px;
@@ -475,8 +552,8 @@ html {
   top: 50%;
   right: -47px;
   z-index: 5;
-}
-.curriculum .fila .item .conectori .circuloi {
+} */
+/* .curriculum .fila .item .conectori .circuloi {
   display: block;
   height: 10px;
   width: 10px;
@@ -485,8 +562,8 @@ html {
   float: right;
   position: relative;
   bottom: 4px;
-}
-.curriculum .fila .item .conectord {
+} */
+/* .curriculum .fila .item .conectord {
   height: 2px;
   background-color: #1cb698;
   width: 47px;
@@ -504,7 +581,7 @@ html {
   float: left;
   position: relative;
   bottom: 4px;
-}
+} */
 /* SECCION PORTFOLIO */
 .portfolio {
   background-color: #252a2e;
@@ -535,6 +612,8 @@ html {
 }
 .portfolio .galeria .proyecto img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   display: block;
 }
 .portfolio .galeria .proyecto .overlay {
@@ -554,6 +633,7 @@ html {
 }
 .portfolio .galeria .proyecto .overlay h3 {
   margin-bottom: 20px;
+  color: white;
   transition: 1s;
 }
 .portfolio .galeria .proyecto .overlay:hover {
@@ -562,6 +642,36 @@ html {
 .portfolio .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0px;
 }
+
+/* Estilo para los botones de enlace */
+.proyecto .overlay .enlaces {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Añade espacio entre los botones */
+}
+
+.proyecto .overlay .btn {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid white; /* Añade un borde blanco */
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.proyecto .overlay .btn:hover {
+  background-color: white; /* Cambio de color al pasar el cursor */
+  color: #1cb698; /* Cambia el texto a verde */
+}
+
+/* Asegúrate de que otros textos no se vean afectados */
+.proyecto .overlay p {
+  color: white; /* Color blanco para los párrafos dentro del overlay */
+}
+
 /* SECCION CONTACTO */
 .contacto {
   background-image: url(img/contact_bg.png);
@@ -626,6 +736,7 @@ html {
 }
 .contacto .col img {
   width: 100%;
+  height: 500px;
 }
 .contacto .col .info {
   position: absolute;
