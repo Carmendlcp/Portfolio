@@ -45,3 +45,21 @@ function efectoHabilidades() {
 window.onscroll = function () {
   efectoHabilidades();
 };
+
+//para envio de email en contacto
+(function () {
+  emailjs.init("E3YBvvgxEJ1_F199P");
+})();
+
+function sendEmail(event) {
+  event.preventDefault();
+
+  emailjs.sendForm("service_7exznzj", "template_hlcgco8", event.target).then(
+    function (response) {
+      alert("Mensaje enviado exitosamente!");
+    },
+    function (error) {
+      alert("Error al enviar el mensaje. Inténtalo de nuevo más tarde.");
+    }
+  );
+}

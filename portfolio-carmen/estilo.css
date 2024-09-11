@@ -697,10 +697,10 @@ html {
   padding: 10px;
   position: relative;
 }
-.contacto .col input,
-.contacto .col textarea {
+.contacto form .col input,
+.contacto form .col textarea {
   display: block;
-  width: 100%;
+  width: 200%;
   padding: 18px;
   border: none;
   margin-bottom: 20px;
@@ -708,7 +708,8 @@ html {
   color: #fff;
   font-size: 18px;
 }
-.contacto button {
+
+.contacto form button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
@@ -721,7 +722,7 @@ html {
   position: relative;
   z-index: 10;
 }
-.contacto button .overlay {
+.contacto form button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -731,7 +732,7 @@ html {
   z-index: -1;
   transition: 1s;
 }
-.contacto button:hover .overlay {
+.contacto form button:hover .overlay {
   width: 100%;
 }
 .contacto .col img {
