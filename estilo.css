@@ -700,7 +700,7 @@ html {
 .contacto form .col input,
 .contacto form .col textarea {
   display: block;
-  width: 200%;
+  width: 100%;
   padding: 18px;
   border: none;
   margin-bottom: 20px;
