@@ -53,12 +53,15 @@ window.onscroll = function () {
 
 function sendEmail(event) {
   event.preventDefault();
+  console.log("Enviando correo..."); // Verifica si esta línea aparece
 
   emailjs.sendForm("service_7exznzj", "template_hlcgco8", event.target).then(
     function (response) {
+      console.log("Respuesta de EmailJS:", response);
       alert("Mensaje enviado exitosamente!");
     },
     function (error) {
+      console.log("Error de EmailJS:", error);
       alert("Error al enviar el mensaje. Inténtalo de nuevo más tarde.");
     }
   );
